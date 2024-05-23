@@ -1,0 +1,32 @@
+- Project Overview
+
+  This project demonstrates the creation of a simple stopwatch using an Arduino Nano and a 0.96-inch OLED display. The stopwatch displays the elapsed time and can be reset by pressing a button connected to the Arduino.
+
+- Hardware Requirements
+
+1. Arduino Nano
+2. 0.96-inch OLED display (I2C or SPI communication protocol)
+3. Breadboard (optional, for prototyping)
+4. Jumper wires
+5. Pushbutton (for reset functionality)
+6. 10kΩ resistor (optional, for button debouncing)
+7. Software Requirements
+
+- Arduino IDE (Optional Libraries)
+
+The specific library you'll need depends on your OLED display's communication protocol. Here are common options:
+1. Adafruit_SSD1306 library for I2C displays 
+2. U8G2 library for various display types 
+
+- Circuit Assembly
+
+1. Power Supply:
+   Connect the Arduino Nano's VIN pin to your laptop's USB port using a USB cable. Alternatively, you can use a regulated 5V power supply.
+   Connect the OLED display's VCC pin to the Arduino's 5V pin.
+2. Ground:
+   Connect the Arduino's GND pin to the OLED display's GND pin.
+3. Communication Protocol:
+   I2C:
+    Connect the OLED display's SDA pin to the Arduino's A4 (SDA) pin.
+    Connect the OLED display's SCL pin to the Arduino's A5 (SCL) pin.
+    SPI: (Consult your OLED display's datasheet for specific pin connections.)
